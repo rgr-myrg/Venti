@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2011 Roger Myrg http://devshop.me/
+ * Copyright (c) 2012 Roger Myrg http://devshop.me/
  * Released under the MIT license:
  * https://github.com/rgr-myrg/Venti/raw/master/MIT-LICENSE
  */
