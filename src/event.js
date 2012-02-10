@@ -1,5 +1,5 @@
 (function(Venti){
-	Venti.Event = function(obj){
+	Venti.Event = function(){
 		var listeners = [];
 		return {
 			add : function(fn, ob){
