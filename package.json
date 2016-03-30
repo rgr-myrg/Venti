@@ -1,0 +1,88 @@
+{
+  "name": "tiny-event-js",
+  "version": "1.0.0",
+  "description": "minimalist Event/Listener Pattern to facilitate event messaging across mutually exclusive or related components",
+  "main": "TinyEvent.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgr-myrg/tiny-event-js.git"
+  },
+  "keywords": [
+    "javascript",
+    "event",
+    "pattern",
+    "framework"
+  ],
+  "author": "Roger Paul",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rgr-myrg/tiny-event-js/issues"
+  },
+  "homepage": "https://github.com/rgr-myrg/tiny-event-js#readme",
+  "jshintConfig": {
+    "curly": true,
+    "eqeqeq": true,
+    "immed": true,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "sub": true,
+    "undef": true,
+    "boss": true,
+    "eqnull": true,
+    "browser": true,
+    "globals": {
+      "console": true,
+      "IS_OBJECT": true,
+      "IS_FUNCTION": true,
+      "EMPTY_FUNCTION": true,
+      "FUNCTION_APPLY": true,
+      "onRegister": true,
+      "onSuccess": true,
+      "onError": true,
+      "onRemove": true,
+      "runOnce": true,
+      "count": true,
+      "UsrLib": true
+    }
+  },
+  "devDependencies": {
+    "browser-sync": "^2.6.4",
+    "browserify": "^9.0.8",
+    "browserify-istanbul": "^0.2.1",
+    "chalk": "^1.1.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-header": "^1.2.2",
+    "gulp-jasmine": "^2.0.1",
+    "gulp-jscs": "^3.0.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-karma": "0.0.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-shell": "^0.4.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.5",
+    "gulp-wrapper": "^0.1.5",
+    "ink-docstrap": "^0.5.2",
+    "jasmine-core": "^2.2.0",
+    "jscs": "^2.1.1",
+    "jsdoc": "3.3.0",
+    "jsftp": "^1.3.1",
+    "karma": "^0.13.22",
+    "karma-browserify": "^4.1.2",
+    "karma-chrome-launcher": "^0.1.8",
+    "karma-jasmine": "^0.3.5",
+    "karma-jasmine-jquery": "^0.1.1",
+    "karma-js-coverage": "^0.4.0",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-spec-reporter": "0.0.18"
+  }
+}
