@@ -2,45 +2,46 @@
 <html xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en:us'>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<title>DevShop.Me :: Venti UI Example</title>
+		<title>UsrLin.Net :: TinyEvent Example</title>
 		<style>
 		</style>
-		<script type="text/javascript" src="venti.js"></script>
+		<script type="text/javascript" src="tiny-event.min.js"></script>
 		<script type="text/javascript">
 		var Echo = {
-			onKeyUp: function(msg){
-				document.getElementById('echo').innerHTML=msg;
+			onSuccess: function(msg){
+				document.getElementById('echo').innerHTML = msg;
 			}
 		};
 
 		var Mirror = {
-			onKeyUp: function(msg){
-				var arr=msg.split('');
-				var msg='';
-				if(arr.length>0)
-					for(var x=arr.length-1;x>=0;x--)
-						msg+=arr[x];
-				document.getElementById('mirror').innerHTML=msg;
+			onSuccess: function(msg){
+				var arr = msg.split('');
+				var msg = '';
+				if(arr.length > 0)
+					for(var x = arr.length-1; x >= 0; x--)
+						msg += arr[x];
+				document.getElementById('mirror').innerHTML = msg;
 			}
 		};
 
 		var Vertical = {
-			onKeyUp: function(msg){
-				var arr=msg.split('');
-				var msg=arr.join('<br>');
-				document.getElementById('vertical').innerHTML=msg;
+			onSuccess: function(msg){
+				var arr = msg.split('');
+				var msg = arr.join('<br>');
+				document.getElementById('vertical').innerHTML = msg;
 			}
 		};
 
-		//Create an Event instance and add listeners
-		var KEYUP = new Venti.Event;
-		KEYUP.add(Echo.onKeyUp);
-		KEYUP.add(Mirror.onKeyUp);
-		KEYUP.add(Vertical.onKeyUp);
+		//Create a TinyEvent instance and add listeners
+		var onKeyUpEvent = new UsrLib.TinyEvent();
+
+		onKeyUpEvent.addListener(Echo);
+		onKeyUpEvent.addListener(Mirror);
+		onKeyUpEvent.addListener(Vertical);
 
 		var UI = {
 			onKeyUp: function(){
-				KEYUP.notify(document.getElementById('box').value);
+				onKeyUpEvent.notifySuccess(document.getElementById('box').value);
 			}
 		};
 

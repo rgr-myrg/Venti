@@ -1,0 +1,38 @@
+{
+	"tags": {
+		"allowUnknownTags": true,
+		"dictionaries": [ "jsdoc" ]
+	},
+	
+	"source": {
+		"include": [
+			"src/"
+		],
+		"includePattern": ".+\\.js(doc)?$"
+	},
+	
+	"plugins": [],
+	
+	"templates": {
+		"cleverLinks": true,
+		"monospaceLinks": true,
+		"default": {
+			"outputSourceFiles": true
+		},
+		"systemName"      : "TinyEvent",
+		"footer"          : "",
+		"copyright"       : "Roger Paul 2011-2016",
+		"navType"         : "vertical",
+		"theme"           : "united",
+		"linenums"        : true,
+		"collapseSymbols" : false,
+		"inverseNav"      : true
+	},
+	
+	"opts": {
+		"template": "templates/default",
+		"encoding": "utf8",
+		"destination": "./documentation/",
+		"recurse": true
+	}
+}

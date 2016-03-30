@@ -1,3 +1,26 @@
+/* tiny-event-js v1.0.0 Wed Mar 30 2016 12:29:50 GMT-0400 (EDT) */(function(w){w.UsrLib=w.UsrLib||{};})(window);(function(UsrLib){var FUNCTION_APPLY = function(func, parent, args) {
+	(function() {
+		func.apply(parent, arguments);
+	})( args );
+},
+
+EMPTY_FUNCTION = function() {},
+
+IS_FUNCTION = function( fn ) {
+	return typeof fn === "function";
+},
+
+IS_OBJECT = function( obj ) {
+	return typeof obj === "object";
+};
+
+var onRegister = "onRegister", 
+	onRemove = "onRemove", 
+	onSuccess = "onSuccess", 
+	onError = "onError", 
+	runOnce = "_runOnce", 
+	count = "length";
+
 /**
  * This class can be sub-classed to represent a <code>TinyEvent</code> 
  * object for triggering state changes and transmitting data.
@@ -116,3 +139,4 @@ UsrLib.TinyEvent = function() {
 		}
 	};
 };
+UsrLib.version='1.0.0';})(UsrLib);
